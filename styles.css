@@ -905,6 +905,13 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 395px) {
+   .hero-caption{
+    padding: 0px;
+   } 
+}
+
+
 .hero-caption h1 {
     font-size: 2.5rem;
 }
