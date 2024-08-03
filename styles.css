@@ -901,16 +901,9 @@ section {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    padding: 0px;
+    /* padding: 20px; */
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-@media (max-width: 395px) {
-   .hero-caption{
-    padding: 0px;
-   } 
-}
-
 
 .hero-caption h1 {
     font-size: 2.5rem;
