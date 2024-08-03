@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="./images/Untitled_design-removebg-preview.png" alt="Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Food Details
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="menu.html">Menu</a>
+                            <a class="dropdown-item" href="item.html">Pizza</a>
+                            <a class="dropdown-item" href="item2.html">Burgur</a>
+                            <a class="dropdown-item" href="item3.html">Mocktail/ Ice-creams</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="order .html">order food</a>
+                        </div>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">jobRegistrationForm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="thank you.html">Thankyou</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Book A Table For Me
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Book a Table</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Your Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone number:</label>
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date">Date:</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="time">Time:</label>
+                                        <input type="time" class="form-control" id="time">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="guests">Number of Guests:</label>
+                                        <select class="form-control" id="guests">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" id="openModalButton">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="orderSection" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Order Your Favorite Food</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="orderForm">
+                        <div id="foodItemsContainer">
+                            <div class="form-group food-item">
+                                <label for="foodItem">Select Food Item</label>
+                                <select class="form-control food-item-select" name="foodItem">
+                                    <option value="Pizza" data-price="115">Masala Dosa - ₹115</option>
+                                    <option value="Burger" data-price="₹75">Aloo Paratha - ₹75</option>
+                                    <option value="Pasta" data-price="150">Poha - ₹150</option>
+                                    <option value="Salad" data-price="150">Idli & Vada - ₹25</option>
+                                    <option value="Sushi" data-price="150">Chole Bhature - ₹150</option>
+                                    <option value="Pizza" data-price="50">Upma - ₹50</option>
+                                    <option value="Burger" data-price="190">Pesarattu - ₹190</option>
+                                    <option value="Pasta" data-price="115">Puri Sabzi - ₹115</option>
+                                    <option value="Salad" data-price="90">Uttapam - ₹90</option>
+                                    <option value="Sushi" data-price="15">Chai & Samosa - ₹15</option>
+                                    <option value="Pizza" data-price="235">Butter Chicken - ₹235</option>
+                                    <option value="Burger" data-price="355">Biryani- ₹355</option>
+                                    <option value="Pasta" data-price="190">Paneer Tikka Masala - ₹190</option>
+                                    <option value="Salad" data-price="315">Dal Makhani - ₹315</option>
+                                    <option value="Sushi" data-price="445">Rogan Josh - ₹445</option>
+                                    <option value="Pizza" data-price="295">Chana Masala - ₹295</option>
+                                    <option value="Burger" data-price="115">Malai Kofta - ₹115</option>
+                                    <option value="Pasta" data-price="345">Fish Curry - ₹345</option>
+                                    <option value="Salad" data-price="150">Chicken Tikka - ₹150</option>
+                                    <option value="Sushi" data-price="250">Veg Thali - ₹250</option>
+                                    <option value="Pizza" data-price="345">Prawn Masala - ₹345</option>
+                                    <option value="Burger" data-price="345">Chicken Korma - ₹345</option>
+                                    <option value="Pasta" data-price="175">Paneer Butter Masala - ₹175</option>
+                                    <option value="Salad" data-price="105">Lamb Vindaloo - ₹105</option>
+                                    <option value="Sushi" data-price="115">Palak Paneer- ₹115</option>
+                                    <option value="Pizza" data-price="150">Dal Tadka- ₹150</option>
+                                    <option value="Burger" data-price="156">Hyderabadi Biryani - ₹156</option>
+                                    <option value="Pasta" data-price="115">Kadai Chicken - ₹115</option>
+                                    <option value="Salad" data-price="115">Baingan Bharta - ₹115</option>
+                                    <option value="Sushi" data-price="315">Gosht Nihari- ₹315</option>
+                                
+                                
+                                
+                                </select>
+                                <label for="quantity">Quantity</label>
+                                <input type="number" class="form-control quantity" name="quantity" placeholder="Enter quantity" value="1">
+                                <button type="button" class="btn btn-danger btn-sm remove-item">Remove</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success btn-sm mb-3" id="addFoodItem">Add Another Item</button>
+                        <div class="form-group">
+                            <label for="totalPrice">Total Price ($)</label>
+                            <input type="text" class="form-control" id="totalPrice" placeholder="Total Price" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter delivery address"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Start -->
+     <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3>DMFOODIES</h3>
+            <p>A restaurant is a place where people can dine, enjoy a variety of cuisines, and experience a welcoming ambiance</p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact us.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: subhradash020@gmail.com</p>
+            <p>Phone: +91 98611448567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Company Name | All Rights Reserved
+        </div>
+      </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const foodItemsContainer = document.getElementById('foodItemsContainer');
+            const addFoodItemBtn = document.getElementById('addFoodItem');
+            const totalPriceInput = document.getElementById('totalPrice');
+    
+            addFoodItemBtn.addEventListener('click', function() {
+                const foodItemTemplate = document.querySelector('.food-item').cloneNode(true);
+                foodItemTemplate.querySelector('.quantity').value = 1;
+                foodItemTemplate.querySelector('.remove-item').addEventListener('click', function() {
+                    foodItemTemplate.remove();
+                    updateTotalPrice();
+                });
+                foodItemsContainer.appendChild(foodItemTemplate);
+                updateTotalPrice();
+            });
+    
+            foodItemsContainer.addEventListener('input', updateTotalPrice);
+    
+            function updateTotalPrice() {
+                let totalPrice = 0;
+                document.querySelectorAll('.food-item').forEach(function(item) {
+                    const select = item.querySelector('.food-item-select');
+                    const quantity = item.querySelector('.quantity').value;
+                    const price = select.options[select.selectedIndex].getAttribute('data-price');
+                    totalPrice += price * quantity;
+                });
+                totalPriceInput.value = totalPrice.toFixed(2);
+            }
+    
+            document.querySelectorAll('.remove-item').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    button.closest('.food-item').remove();
+                    updateTotalPrice();
+                });
+            });
+    
+            updateTotalPrice();
+        });
+    </script>
+    </body>
+    </html>
+ 

@@ -1,0 +1,1109 @@
+/* Custom Navbar Styles */
+.navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+}
+
+/* Ensure the logo fits nicely in the navbar */
+.navbar-brand {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+}
+
+.logo {
+    max-width: 100px; /* Adjust the maximum width of your logo */
+    height: auto; /* Ensures the logo scales proportionally */
+    display: block; /* Ensures the logo behaves as a block element */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        max-height: 40px; /* Smaller size for mobile devices */
+    }
+}
+
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White text color for the nav links */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 15px; /* Add padding around the links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc !important; /* Change color on hover */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #f8f9fa !important; /* Highlight color for the active nav item */
+    /* Darker background for active item */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* White border for the toggler button */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default background image */
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 8px; /* Rounded corners for the modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.modal-header {
+    border-bottom: none; /* Remove bottom border */
+}
+
+.modal-body {
+    padding: 2rem; /* Add padding inside the modal */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Space between form elements */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button background color */
+    border-color: #007bff; /* Border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+    border-color: #004085; /* Darker border color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        text-align: center; /* Center text on small screens */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 15px 0; /* Adjust padding for better spacing */
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem; /* Adjust padding for the toggler */
+    }
+}
+
+
+/* Container Padding */
+.container {
+    padding-top: 1rem; /* Adjust top padding */
+    padding-bottom: 1rem; /* Adjust bottom padding */
+}
+
+
+/* Content Section Styles */
+.name {
+    font-size: 2.5rem; /* Increase font size for name */
+}
+
+.description {
+    font-size: 1.2rem; /* Adjust font size */
+}
+
+.buttons {
+    margin-top: 1rem; /* Add spacing */
+}
+
+.button {
+    margin-right: 1rem; /* Adjust button spacing */
+}
+
+/* Image Styles */
+.image {
+    max-width: 100%; /* Ensure image responsiveness */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Example Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .name {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .description {
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+/* contact page */
+
+.contact-form-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form-title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-send {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #0056b3;
+}
+/* card */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.btn-update,
+.btn-remove {
+    min-width: 80px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .col-md-8 {
+        margin-bottom: 20px;
+    }
+}
+/* food */
+.card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    margin-top: 20px; /* Adds some space at the top */
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 10px 0; /* Padding for top and bottom */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Larger font size for brand */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White color for links */
+    margin-right: 10px; /* Space between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Hover color */
+}
+
+/* Form styles */
+.content {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding inside the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box effect */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+.form-control {
+    width: 100%; /* Full width input */
+}
+
+.btn-primary {
+    width: 100%; /* Full width button */
+}
+
+/* Image styles */
+.image {
+    max-width: 100%; /* Ensure image doesn't exceed column width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for box effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .content {
+        margin-top: 20px; /* Add space on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Smaller font size for brand on smaller screens */
+    }
+}
+
+/* Global styles */
+
+.services {
+    padding: 60px 0; /* Padding for section */
+    background-color: #ffffff; /* White background */
+}
+
+.services .card {
+    border: none; /* No borders on cards */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.services .card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.services .card img {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.services .card-body {
+    text-align: center; /* Center text */
+}
+
+.services .card-title {
+    font-size: 1.5rem; /* Larger title font size */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.services .card-text {
+    color: #666666; /* Lighter text color */
+}
+
+.services .btn-primary {
+    background-color: #007bff; /* Blue primary button */
+    border-color: #007bff; /* Blue border color */
+}
+
+.services .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav .btn {
+        margin-left: 0; /* Center align buttons on smaller screens */
+        margin-top: 10px; /* Space between buttons */
+    }
+}
+
+@media (max-width: 768px) {
+    .services .card {
+        margin-bottom: 30px; /* Increase space between cards */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center; /* Center align navbar items */
+    }
+}
+
+/* styles1.css */
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+  
+  .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid #444;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  }
+  
+
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+header .logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.menu-section h2 {
+    color: #f0c040;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: #222;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item h3 {
+    color: #f0c040;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.menu-item .description {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.menu-item .discount {
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #f0c040;
+    color: #111;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-item {
+        text-align: center;
+    }
+
+    .menu-item img {
+        margin-bottom: 15px;
+    }
+
+    .menu-item .price {
+        margin-top: 15px;
+    }
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #ffc107; /* Background color */
+    color: #333; /* Text color */
+    padding-top: 50px; /* Top padding */
+    padding-bottom: 50px; /* Bottom padding */
+}
+
+.testimonial-section .section-title {
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 30px; /* Bottom margin */
+}
+
+.testimonial-text {
+    font-size: 1.25rem; /* Testimonial text font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.testimonial-author {
+    margin-top: 10px; /* Top margin for author name */
+    font-style: italic; /* Italicize author name */
+}
+.carousel-item img {
+    max-width: 150px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #fff; /* White border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 50%; /* Rounded shape */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-style: italic;
+    margin-top: 10px;
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+    transition: border-radius 0.3s ease;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    border-radius: 15px; /* Initial border radius */
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+    border-radius: 50%; /* Make the image rounded on hover */
+}
+.info-box {
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #f2b305;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.info-box h1 {
+    font-size: 3rem;
+    color: #79e594;
+    margin: 0;
+}
+.info-box p {
+    margin: 0;
+}
+.info-box h6 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+        .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.menu-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-content img {
+    margin-right: 15px;
+}
+
+.menu-item-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-item-desc {
+    color: #777;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    color: #ff6f00;
+    margin-right: 10px;
+}
+
+.menu-item-title,
+.menu-item-desc {
+    margin: 0;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-title {
+    font-weight: bold;
+}
+
+.menu-item-desc {
+    color: gray;
+}
+
+.menu-item-price {
+    font-size: 1.2rem;
+}
+
+
+/* General styles for the container */
+/* .container {
+    margin-top: 20px;
+} */
+
+/* Header styles */
+h1.name, h2.text-center {
+    color: #343a40; /* Dark color for headings */
+    font-weight: bold;
+}
+
+/* Styles for the registration form */
+#jobRegistrationForm {
+    background-color: #f8f9fa; /* Light background for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling form controls */
+.form-control {
+    border-radius: 4px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Light border */
+    padding: 10px; /* Padding inside inputs */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+/* Styling form labels */
+.form-group label {
+    font-weight: bold; /* Bold labels */
+    color: #495057; /* Dark color for labels */
+}
+
+/* Styling the submit button */
+.btn-warning{
+    background-color: #c9e704; /* Primary color */
+    border-color: #b8e102; /* Matching border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Hover effect for the button */
+.btn-warning:hover {
+    background-color: #d2ec0d; /* Darker shade on hover */
+    border-color: #d6d203; /* Darker border on hover */
+}
+
+/* Styling file input */
+.form-control-file {
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside file input */
+}
+
+/* General styles for the container */
+
+
+/* Styles for the contact form */
+.contact-form-container {
+    background-color: #f8f9fa; /* Light background for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling form controls */
+.form-control {
+    border-radius: 4px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Light border */
+    padding: 10px; /* Padding inside inputs */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+/* Styling form labels */
+.form-group label {
+    font-weight: bold; /* Bold labels */
+    color: #495057; /* Dark color for labels */
+}
+
+/* Styling the submit button */
+.btn-warning{
+    background-color: #aeff00; /* Primary color */
+    border-color: #b4b407; /* Matching border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Hover effect for the button */
+.btn-primary:hover {
+    background-color: #d5c80d; /* Darker shade on hover */
+    border-color: #ccd209; /* Darker border on hover */
+}
+
+/* Custom CSS for YouTube Video Embed */
+.embed-responsive-16by9 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 83%;
+    height: auto;
+    border: 1px solid #ddd; /* Example border styling */
+}
+
+
+.card-img-top {
+    object-fit: cover; /* This makes sure the image covers the entire area of the container */
+    height: 200px; /* Set a fixed height for the images */
+    width: 100%; /* Ensure the image takes the full width of the card */
+}
+
+/* rotaing image */
+.img-box img {
+    width: 90%;
+    height: auto;
+    animation: rotateImage 5s linear infinite;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+section {
+        
+        padding: 60px 0;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+    }
+
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .form-group select,
+    .form-group input,
+    .form-group textarea {
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form-group select:focus,
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        background-color: #f8f9fa;
+    }
+
+    .btn-block {
+        background-color: #ff6f61;
+        border: none;
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    .btn-block:hover {
+        background-color: #e65c50;
+    }
+
+
+
+      
+    .content-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+      
+    }
+
+    .content-image {
+        width: 50%;
+        text-align: center;
+    }
+
+    .content-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-detail {
+        width: 50%;
+        padding: 40px;
+        background-color: #4b2c1c;
+        color: white;
+        position: relative;
+        border-radius: 10px;
+    }
+
+
+ 
+    .author-image {
+        float: left;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .inline-image {
+        width: 100px;
+        height: auto;
+        margin: 10px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .additional-images {
+        margin-top: 20px;
+    }
+/* styles.css */
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    /* padding: 20px; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-caption h1 {
+    font-size: 2.5rem;
+}
+
+.hero-caption p {
+    font-size: 1.25rem;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.content-image, .content-detail {
+    flex: 1;
+    padding: 10px;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-text {
+    margin-bottom: 20px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.additional-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-caption h1 {
+        font-size: 2rem;
+    }
+
+    .hero-caption p {
+        font-size: 1rem;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .content-image, .content-detail {
+        
+        width: 100% !important;;
+        
+    }
+
+    .content-text p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-caption p {
+        font-size: 0.875rem;
+    }
+
+    .content-text p {
+        font-size: 0.75rem;
+    }
+
+    .author-image {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+
+/* Gallery item style */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px; /* Adjust this value to control vertical spacing between rows */
+}
+
+/* Adjust margin for specific images if needed */
+.img-container:nth-child(2) {
+    margin-top: 25%; /* You can adjust or remove this if you don't want a different top margin */
+}
+
+.img-container img {
+    transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.1); /* Optional: Add a zoom effect on hover */
+}
+    
+/* famous food */
+
+a {
+    text-decoration: none;
+    color: black; /* Adjust color as needed */
+    display: inline-block;
+}
+
+span {
+    font-size: 26px; /* Adjust size as needed */
+    transition: transform 0.3s ease;
+}
+
+
+
+/* thank u page */
+
+
+
+ /* Custom styles for the thank you message */
+ .thank-you-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.thank-you-container h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.thank-you-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.thank-you-container .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+.thank-you-container .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.thank-you-container .btn:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="./images/Untitled_design-removebg-preview.png" alt="Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Food Details
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="menu.html">Menu</a>
+                            <a class="dropdown-item" href="item.html">Pizza</a>
+                            <a class="dropdown-item" href="item2.html">Burgur</a>
+                            <a class="dropdown-item" href="item3.html">Mocktail/ Ice-creams</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="order .html">order food</a>
+                        </div>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">jobRegistrationForm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="thank you.html">Thankyou</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Book A Table For Me
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Book a Table</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Your Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone number:</label>
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date">Date:</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="time">Time:</label>
+                                        <input type="time" class="form-control" id="time">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="guests">Number of Guests:</label>
+                                        <select class="form-control" id="guests">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" id="openModalButton">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Most Popular Items</h2>
+        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-breakfast-tab" data-bs-toggle="pill" href="#pills-breakfast"
+                    role="tab" aria-controls="pills-breakfast" aria-selected="true">Popular Breakfast</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" href="#pills-lunch" role="tab"
+                    aria-controls="pills-lunch" aria-selected="false">Special Lunch</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" href="#pills-dinner" role="tab"
+                    aria-controls="pills-dinner" aria-selected="false">Lovely Dinner</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Breakfast Tab -->
+            <div class="tab-pane fade show active" id="pills-breakfast" role="tabpanel"
+                aria-labelledby="pills-breakfast-tab">
+                <!-- Repeat menu items for breakfast -->
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b10.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Masala Dosa</p>
+                            <p class="menu-item-desc">Crispy rice and lentil crepe filled with spiced potato masala,
+                                served with coconut chutney and sambar. A classic South Indian breakfast favorite.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <!-- Add more breakfast items here -->
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b9.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Aloo Paratha</p>
+                            <p class="menu-item-desc">Flaky whole wheat flatbread stuffed with seasoned mashed potatoes,
+                                served with yogurt and pickle. A hearty and satisfying North Indian breakfast staple.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹75</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b8.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Poha</p>
+                            <p class="menu-item-desc">Flattened rice cooked with turmeric, mustard seeds, onions, peas,
+                                and garnished with fresh coriander and lemon. A light and flavorful dish from Western
+                                India</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹150</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b7.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Idli & Vada</p>
+                            <p class="menu-item-desc">Soft steamed rice cakes and crispy lentil donuts, served with
+                                coconut chutney and sambar. A traditional South Indian breakfast combination.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b6.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Chole Bhature</p>
+                            <p class="menu-item-desc">Spicy chickpea curry paired with deep-fried, fluffy bread. A
+                                popular and indulgent breakfast dish from North India.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹150</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b5.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Upma</p>
+                            <p class="menu-item-desc">A savory porridge made from semolina, cooked with vegetables,
+                                mustard seeds, and curry leaves. A comforting and wholesome dish.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b4.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Pesarattu</p>
+                            <p class="menu-item-desc">Green gram crepes served with ginger chutney. A nutritious and
+                                protein-rich breakfast option</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹190</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b3.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Puri Sabzi</p>
+                            <p class="menu-item-desc">Puffy fried bread served with a spiced potato curry. A classic
+                                Indian breakfast enjoyed across the country.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b2.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Uttapam</p>
+                            <p class="menu-item-desc">Thick, savory pancakes topped with vegetables like onions,
+                                tomatoes, and chilies, served with chutneys and sambar.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹90</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/b1.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Chai & Samosa</p>
+                            <p class="menu-item-desc">Ipsum ipsum clita erat amet dolor justo diam</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹15</div>
+                </div>
+             
+
+            </div>
+            <!-- Lunch Tab -->
+            <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
+                <!-- Repeat menu items for lunch -->
+
+                <!-- Add more lunch items here -->
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l1.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Butter Chicken</p>
+                            <p class="menu-item-desc">Tender chicken cooked in a creamy tomato sauce with a blend of
+                                aromatic spices. Served with butter naan or steamed rice, this dish is a beloved
+                                classic.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹235</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l2.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Biryani</p>
+                            <p class="menu-item-desc">Fragrant basmati rice cooked with marinated meat (chicken, mutton,
+                                or vegetable) and layered with caramelized onions and aromatic spices. A royal dish
+                                that's flavorful and satisfying</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹355</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l3.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Paneer Tikka Masala</p>
+                            <p class="menu-item-desc">Grilled cubes of paneer (Indian cottage cheese) simmered in a rich
+                                and creamy tomato-based gravy. Perfect with naan or rice, it's a vegetarian favorite.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹190</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l4.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Dal Makhani</p>
+                            <p class="menu-item-desc">Slow-cooked black lentils and kidney beans in a buttery, creamy
+                                sauce. This dish is a staple of North Indian cuisine, often paired with rice or naan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹315</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l5.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Rogan Josh</p>
+                            <p class="menu-item-desc">A flavorful lamb curry made with yogurt, aromatic spices, and
+                                herbs. This Kashmiri specialty is best enjoyed with steamed basmati rice or naan.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">455</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l6.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Chana Masala</p>
+                            <p class="menu-item-desc">Chickpeas cooked in a spicy tomato-based sauce, flavored with
+                                ginger, garlic, and a blend of Indian spices. A nutritious and hearty option served with
+                                rice or bread.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹295</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l7.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Malai Kofta</p>
+                            <p class="menu-item-desc">Deep-fried vegetable and paneer dumplings served in a rich, creamy
+                                sauce made from tomatoes and cashews. A luxurious and delicious vegetarian dish.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l8.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Fish Curry</p>
+                            <p class="menu-item-desc">Fresh fish cooked in a tangy and spicy coconut-based curry. A
+                                coastal favorite, best served with steamed rice.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹345</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l9.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Chicken Tikka</p>
+                            <p class="menu-item-desc">Boneless chicken pieces marinated in yogurt and spices, then
+                                grilled to perfection. Served with mint chutney and a side of salad, it's a popular
+                                choice for a lighter meal.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="./images/l10.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Veg Thali</p>
+                            <p class="menu-item-desc">A traditional Indian platter featuring a variety of dishes,
+                                including dal, vegetables, rice, roti, pickle, and dessert. A wholesome and balanced
+                                meal that offers a taste of different flavors</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹250</div>
+                </div>
+
+            </div>
+            <!-- Dinner Tab -->
+            <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                <!-- Repeat menu items for dinner -->
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k6.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Prawn Masala</p>
+                            <p class="menu-item-desc">Juicy prawns cooked in a spicy tomato and onion-based sauce, seasoned with a blend of aromatic spices. Ideal with rice or naan.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹345</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k10.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Chicken Korma</p>
+                            <p class="menu-item-desc">Tender chicken pieces cooked in a rich and creamy sauce made from
+                                yogurt, cashews, and aromatic spices. This mildly spiced dish pairs beautifully with
+                                naan or rice.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹345</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k9.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Paneer Butter Masala</p>
+                            <p class="menu-item-desc">Soft cubes of paneer simmered in a buttery, tomato-based sauce
+                                with a blend of spices. This vegetarian favorite is best enjoyed with naan or steamed
+                                rice.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹175</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k8.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Lamb Vindaloo</p>
+                            <p class="menu-item-desc">A spicy and tangy lamb curry cooked with vinegar, spices, and
+                                potatoes. This Goan specialty is known for its bold flavors and is perfect with rice or
+                                bread.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹105</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k7.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Palak Paneer</p>
+                            <p class="menu-item-desc">Juicy prawns cooked in a spicy tomato and onion-based sauce,
+                                seasoned with a blend of aromatic spices. Ideal with rice or naan.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k5.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Dal Tadka</p>
+                            <p class="menu-item-desc">Yellow lentils cooked with onions, tomatoes, and spices, then
+                                tempered with ghee and aromatic spices. A comforting and wholesome dish, great with rice
+                                or roti.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹150</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k4.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Hyderabadi Biryani</p>
+                            <p class="menu-item-desc">A fragrant rice dish cooked with marinated meat (chicken, mutton,
+                                or vegetable) and a blend of spices, layered with saffron and garnished with fried
+                                onions.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹156</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k3.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Kadai Chicken</p>
+                            <p class="menu-item-desc">Chicken pieces cooked with bell peppers, onions, and tomatoes in a
+                                spicy and tangy gravy. This flavorful dish is perfect with naan or rice.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k2.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Baingan Bharta</p>
+                            <p class="menu-item-desc">Roasted eggplant mashed and cooked with tomatoes, onions, and
+                                spices. This smoky, savory dish pairs well with roti or rice.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹115</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <img src="images/k1.jpg" alt="Item Image" class="img-fluid" width="100">
+                        <div>
+                            <p class="menu-item-title">Gosht Nihari</p>
+                            <p class="menu-item-desc">Slow-cooked lamb stew with a rich, spicy gravy and aromatic
+                                spices. Traditionally enjoyed with naan or paratha for a hearty and satisfying meal.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">₹315</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3>DMFOODIES</h3>
+            <p>A restaurant is a place where people can dine, enjoy a variety of cuisines, and experience a welcoming ambiance</p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact us.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: subhradash020@gmail.com</p>
+            <p>Phone: +91 98611448567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Company Name | All Rights Reserved
+        </div>
+      </footer>
+    <!-- Footer End -->
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
